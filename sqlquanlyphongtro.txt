@@ -1,0 +1,13 @@
+CREATE DATABASE phongtro;
+
+USE phongtro;
+
+CREATE TABLE phong_tro (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    ma_phong VARCHAR(10) UNIQUE NOT NULL,
+    ten_nguoi_thue VARCHAR(50) NOT NULL,
+    so_dien_thoai VARCHAR(10) NOT NULL,
+    ngay_bat_dau_thue DATE NOT NULL,
+    hinh_thuc_thanh_toan ENUM('Theo tháng', 'Theo quý', 'Theo năm') NOT NULL,
+    ghi_chu TEXT
+);
